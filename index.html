@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
-        /* Estilos padrões para desktops */
+        <link rel="stylesheet" href="styles.css">
+
+        /* Estilos padrões para desktop */
 body {
     font-size: 16px;
 }
@@ -12,38 +15,27 @@ body {
     margin: 0 auto;
 }
 
-/* Estilos para tablets (largura menor que 768px) */
-@media only screen and (max-width: 768px) {
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 780px) {
     body {
-        font-size: 14px; /* Reduz o tamanho da fonte */
+        font-size: 14px; /* Reduzir tamanho da fonte para celulares */
     }
 
     .container {
-        width: 90%; /* Aumenta a largura do container */
+        width: 95%; /* Ajusta o container para ocupar mais espaço na tela */
     }
 
-    .imagem-bazar {
-        width: 100%; /* Faz as imagens ocuparem toda a largura */
-    }
-}
-
-/* Estilos para celulares (largura menor que 480px) */
-@media only screen and (max-width: 480px) {
-    body {
-        font-size: 12px; /* Reduz ainda mais o tamanho da fonte */
+    img {
+        max-width: 100%; /* Garante que as imagens se ajustem à tela */
+        height: auto;
     }
 
-    .container {
-        width: 100%; /* O container ocupa 100% da tela */
-    }
-
-    .imagem-bazar {
-        width: 100%; /* Imagens em largura total da tela */
-    }
-
+    /* Estilos para o menu de navegação em dispositivos móveis */
     nav ul {
-        flex-direction: column; /* Menu de navegação em coluna */
+        flex-direction: column; /* Transforma o menu em uma coluna */
+        text-align: center;
     }
+    
 }
 
     </style>
@@ -145,6 +137,7 @@ nav ul li a {
         </section>
 
     <style>
+      
         #sobre {
     text-align: center; /* Centraliza o texto */
     margin: 20px 0; /* Margem acima e abaixo da seção */
@@ -161,7 +154,7 @@ nav ul li a {
 }
 
 .imagem-atividade {
-    max-width: 500px; /* Ajuste o tamanho da imagem conforme necessário */
+    max-width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
     height: auto; /* Mantém a proporção */
     margin: 0 50px; /* Espaçamento entre as imagens */
 }
@@ -313,14 +306,17 @@ video {
         <li class="Doações Financeiras"><strong>Doações Financeiras: Contribuições mensais ou únicas ajudam a custear nossos serviços e iniciativas.</li>
         <p id="pix">Faça sua doação pelo PIX:45 601 782/0001 - 52 </p>
         <li class="Bazar Fixo">Bazar Fixo: Visite nosso bazar, aberto de segunda a sexta. Todas as vendas revertidas em benefício dos nossos assistidos.</li>
-        <p id="endereco">Visite nosso bazar no endereço: Rua Benício de Souza Ramos, nº 690, Bairro Alto da Conceição.</p>
+        <p id="endereco">Visite nosso bazar no endereço: Rua Benício de Souza Ramos, nº 690, Bairro Alto da Conceição, Serra Talhada - PE.</p>
         <div class="media-container">
             <img src="bazar3.jpeg" alt="bazar amparo amigo" class="imagem-bazar">
             <iframe width="300" height="200" src="bazar 2.mp4" title="Vídeo do Bazar" frameborder="0" allowfullscreen></iframe>
             <img src="bazar1.jpeg" alt="Bazar amparo amigo" class="imagem-bazar">
         </div>
         <style>
-            .media-container {
+    
+   
+    
+ {
     display: flex; /* Ativa o Flexbox */
     justify-content: center; /* Centraliza os itens */
     align-items: center; /* Alinha verticalmente os itens */
@@ -332,6 +328,7 @@ video {
     height: auto; /* Mantém a proporção da imagem */
     margin-right: 20px; /* Espaço entre a imagem e o vídeo */
 }
+
         </style>
     </section>
     <section id="doacoes">
@@ -372,13 +369,24 @@ strong {
 
 #endereco {
     font-size: 1.2em; /* Aumenta o tamanho da fonte para o endereço */
-    color: #0004ff; /* Cor de destaque para o endereço */
+    color: #0c0cf0; /* Cor de destaque para o endereço */
 }
 </style>
 
 
 <section id="campanha">
     <h2>Campanha do Mês</h2>
+
+    <section id="inscricao">
+        <h2 style="color: #FF69B4;">Inscrição para Caminhada Outubro Rosa - Amparo Amigo</h2>
+        <p>Participe da caminhada do Amparo Amigo e apoie a conscientização sobre o câncer de mama. Sua inscrição é fundamental para o sucesso do evento! 💖</p>
+        <img src="caminhadaout.jpeg" alt="Caminhada Outubro Rosa" style="max-width: 100%; height: auto; margin: 20px 0;">
+        <p>
+            <a href="https://forms.gle/K2DCiAUqbdzYTRiX9" style="color: #FF69B4; font-weight: bold;">Clique aqui para se inscrever agora e garantir sua participação!</a>
+        </p>
+        <p>Qualquer dúvida, entre em contato pelo número (87) 99991-5322.</p>
+    </section>
+
     <img src="out1.jpeg" alt="outubro rosa" class="imagem-bazar">
     <img src="out2.jpeg" alt="outubro rosa" class="imagem-bazar">
     <img src="out3.jpeg" alt="outubro rosa" class="imagem-bazar">
