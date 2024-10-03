@@ -1,6 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+<head> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos padrões para desktops */
+body {
+    font-size: 16px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos para tablets (largura menor que 768px) */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+
+    .container {
+        width: 90%; /* Aumenta a largura do container */
+    }
+
+    .imagem-bazar {
+        width: 100%; /* Faz as imagens ocuparem toda a largura */
+    }
+}
+
+/* Estilos para celulares (largura menor que 480px) */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 12px; /* Reduz ainda mais o tamanho da fonte */
+    }
+
+    .container {
+        width: 100%; /* O container ocupa 100% da tela */
+    }
+
+    .imagem-bazar {
+        width: 100%; /* Imagens em largura total da tela */
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu de navegação em coluna */
+    }
+}
+
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amparo Amigo</title>
